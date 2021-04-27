@@ -1,0 +1,167 @@
+
+
+
+
+
+.team-section {
+    background-image: url('../../../assets/images/team-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    display: none;
+}
+
+.team-section h2.heading {
+    display: inline-block;
+    display: none;
+
+}
+
+.team-section .heading:after {
+    content: " ";
+    position: absolute;
+    bottom: -10px;
+    left: 3px;
+    width: 82%;
+    display: none;
+
+}
+
+.slick-slide:focus {
+    outline: none !important;
+    display: none;
+
+}
+
+.slider-card {
+    padding: 20px 20px;
+    margin: 20px auto 0px auto;
+    display: none;
+
+}
+
+.slick-slide img {
+    margin: 0 auto;
+    display: none;
+
+}
+
+.slider-content h3 {
+    font-family: "f-semibold";
+    font-weight: normal;
+    letter-spacing: 1px;
+    font-size: 18px;
+    margin: 20px 0 10px 0;
+    display: none;
+
+}
+
+.slider-content h4 {
+    font-family: "f-bold";
+    font-weight: normal;
+    letter-spacing: 1px;
+    font-size: 16px;
+    color: #7B7B7B;
+    display: none;
+
+ }
+
+.slider-card .slider-content ul.team-social {
+    list-style: none;
+    margin: 0; 
+    padding: 0;
+    display: none;
+
+}
+
+.slider-card .slider-content ul.team-social li {
+    display: inline-block;
+    text-decoration: none;
+    margin: 10px;
+    display: none;
+
+}
+
+.slider-card .slider-content ul.team-social li a {
+    text-decoration: none;
+    display: none;
+
+}
+
+/* .slider-card .slider-content ul.team-social li a img {
+    width: 25px;
+} */
+
+
+
+/* ********************* Media Query ********************** */
+@media screen and (max-width: 1440px) {
+    
+}
+
+@media screen and (max-width: 1366px) {
+    
+    
+}
+
+@media screen and (max-width: 1280px) {
+}
+
+@media screen and (max-width: 1024px) {
+    .slider-card {
+        padding: 20px 10px;
+        display: none;
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .team-section {
+        padding-top: 50px;
+        padding-bottom: 10px;
+        display: none;
+
+    }
+
+    .slick-slide .slider-content img.team-img {
+        margin: 0 auto;
+        width: 50%;
+        display: none;
+
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .team-section {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        display: none;
+
+    }
+
+    .slider-card .slider-content ul.team-social li {
+        margin: 0px;
+        display: none;
+
+    }
+
+    .slider-card .slider-content ul.team-social li:first-child {
+        margin-right: 15px;
+        display: none;
+
+    }
+}
+
+@media screen and (max-width: 375px) {
+    
+}
+
+@media screen and (max-width: 360px) {
+    
+}
+
+@media screen and (max-width: 320px) {
+    
+}

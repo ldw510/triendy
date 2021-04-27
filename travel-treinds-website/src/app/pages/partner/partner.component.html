@@ -1,0 +1,114 @@
+<header class="bg-black">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="partner-header">
+                    <a href="Javascript:void();" routerLink="" routerLinkActive="link-active"> <img src="assets/images/brand-logo.png" class="img-fluid"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+<section class="contact-sec bg-green custom-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="contact-content text-center">
+                    <h2 class="black heading"> Contact Us </h2>
+
+                    <form class="mt-5" [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <div class="">
+                                    <input type="text" class="form-control" formControlName="first_name" [ngClass]="{ 'is-invalid': submitted && f.first_name.errors }" id="first_name" placeholder="First Name" />
+                                    <div *ngIf="submitted && f.first_name.errors" class="invalid-feedback">
+                                        <div *ngIf="f.first_name.errors.required">First Name is required</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end of first name -->
+
+                            <div class="col-12 col-md-6">
+                                <div class="">
+                                    <input type="text" class="form-control" formControlName="last_name" [ngClass]="{ 'is-invalid': submitted && f.last_name.errors }" id="last_name" placeholder="Last Name">
+                                    <div *ngIf="submitted && f.last_name.errors" class="invalid-feedback">
+                                        <div *ngIf="f.last_name.errors.required">Last Name is required</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end of last name -->
+
+                            <div class="col-12 col-md-6">
+                                <div class="">
+                                    <input type="email" class="form-control" formControlName="email_id" [ngClass]="{ 'is-invalid': submitted && f.email_id.errors }" id="email_id" placeholder="Email" />
+                                    <div *ngIf="submitted && f.email_id.errors" class="invalid-feedback">
+                                        <div *ngIf="f.email_id.errors.required">Email is required</div>
+                                        <div *ngIf="f.email_id.errors.email">Email must be a valid email address</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end of email -->
+
+                            <div class="col-12 col-md-6">
+                                <div class="">
+                                    <input type="text" class="form-control" onkeypress="if(this.value.length==10) return false;return event.charCode >= 48 && event.charCode <= 57 ||event.charCode == '.' || event.charCode == 250 " formControlName="contact_no" [ngClass]="{ 'is-invalid': submitted && f.contact_no.errors }"
+                                        id="phn_number" placeholder="Contact No." />
+                                    <div *ngIf="submitted && f.contact_no.errors" class="invalid-feedback">
+                                        <div *ngIf="f.contact_no.errors.required">Phone Number is required</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end of phone number -->
+
+                            <div class="col-12">
+                                <div class="contact-textarea">
+                                    <textarea formControlName="your_message" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.your_message.errors }" id="your_msg" placeholder="Your Message"> Your Message </textarea>
+                                    <div *ngIf="submitted && f.your_message.errors" class="invalid-feedback">
+                                        <div *ngIf="f.your_message.errors.required">Phone Number is required</div>
+                                    </div>
+                                </div>
+                                <!-- end of message -->
+
+                                <!-- <div> <h2 class="green"> {{ message }} </h2></div> -->
+
+                                <div class="contact-send-btn">
+                                    <button type="submit" class=""> Submit </button>
+                                </div>
+                            </div>
+                            <!-- textarea and send btn -->
+                        </div>
+                        <!-- end of row -->
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<app-footer></app-footer>
+
+
+
+<!-- Modal -->
+<div class="modal" id="test1" tabindex="-1" aria-hidden="true" role="dialog" [ngStyle]="{'display':display}">
+    <div class="modal-dialog  modal-dialog-centered modal-sm" style="max-width:300px; margin-top: calc(100vh - 110vh);">
+        <div class="modal-content dialog text-center card-wrap">
+            <div class="modal-body heading-mes">
+                <div class="text-center">
+                    <p style="font-weight: 600; text-transform: capitalize;">{{message}}</p>
+                </div>
+
+                <div class="row">
+                    <button type="submit" (click)="hidePop()" class="btn btn-default mx-auto">ok</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

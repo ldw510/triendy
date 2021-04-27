@@ -1,0 +1,515 @@
+<!--
+  Travel Triends
+  Created By harshit Soni 23/09/2020
+  Copyright © 2020 SiyatechVentures.All rights reserved.
+ -->
+
+<app-header></app-header>
+
+<!-- Banner Section -->
+<div class="banner-overlay" id="bannerTop-section">
+    <div class="banner-video-section web-design" id="bannerTop">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 p-0">
+                    <div class="hero-heading">
+                        <h1 class="main-heading white">
+                            Discover Your Travel Triend.
+                        </h1>
+                        <h2 class="para yellow">
+                            Travel Experiences Influenced By You.
+                        </h2>
+                        <button type="button" onClick="document.getElementById('contact').scrollIntoView();" class=""> Sign Up Today  <span><i class="fa fa-long-arrow-right"></i></span> </button>
+                    </div>
+                    <video class="only-web" [loop]="true" preload="auto" [autoplay]="true" muted="muted" [muted]="true" [src]="videoBanner" #bannerVideo></video>
+                    <video class="only-mobile" poster="assets/images/poster-img.jpg" [loop]="true" preload="auto" [autoplay]="true" muted="muted" [muted]="true" [src]="videoBanner" #bannerVideo></video>
+                </div>
+                <!-- end of col-12 -->
+            </div>
+
+            <!-- Banner Section -->
+            <div class="banner-section custom-padding">
+                <div class="row">
+                    <div class="col-12 col-xl-6">
+
+                    </div>
+                    <!-- end of col-xl-6 -->
+
+  
+                    <!-- end of col-xl-6 -->
+                </div>
+            </div>
+            <!-- End of Banner Section -->
+        </div>
+        <!-- end of web-design -->
+    </div>
+
+    <div class="banner-video-section mobile-design" id="bannerTop">
+        <div class="container-fluid">
+            <div class="banner-section custom-padding">
+                <div class="row">
+                    <div class="col-12 baner-slider-bottom">
+
+
+                        <div class="banner-slider">
+                            <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="videoConfig">
+                                <div ngxSlickItem *ngFor="let vid of videos; let i = index" class="slide">
+                                    <div class="slider-card mt-4 mt-lg-5">
+                                        <div class="slider-content">
+                                            <div class="slider-top mb-3">
+                                                <div class="row">
+                                                    <div class="col-10">
+                                                        <div class="row">
+                                                            <div class="col-3">
+                                                                <div>
+                                                                    <img src="{{ vid.ClientImg }}" alt="" />
+                                                                </div>
+                                                            </div>
+                                                            <!-- end of col-2 -->
+
+                                                            <div class="col-9 pl-0">
+                                                                <div class="slider-top-client">
+                                                                    <h4 class="white">{{ vid.ClientName }}</h4>
+                                                                    <span class="grey">
+                                    {{ vid.ClientDate }}
+                                  </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <div class="banner-client-share">
+                                                            <!-- <a href="#"> <img src="assets/images/banner-share.png" class="ml-auto" alt=""> </a> -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- end of slider-top -->
+
+                                            <div class="slider-middle">
+                                                <video [loop]="true" preload="auto" [src]="vid.ClientVideo" [autoplay]="true" muted="muted" [muted]="true" controls="controls" (click)="changeBannerVideo(vid.ClientVideo)">
+                        </video>
+                                            </div>
+                                            <!-- end of slider-middle -->
+
+                                            <div class="slider-bottom">
+                                                <h3 class="white">{{ vid.ClintDes }}</h3>
+                                            </div>
+                                            <!-- end of slider-bottom -->
+                                        </div>
+                                    </div>
+                                    <!-- end of slider-card-->
+                                </div>
+                            </ngx-slick-carousel>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of mobile-design -->
+
+    </div>
+</div>
+<!-- End of Banner Section -->
+
+<!-- Second Section -->
+<section class="second-section custom-padding" id="about-section">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 mb-0 mb-lg-5" id="about">
+                <div class="about-us-section">
+                    <div class="row">
+                        <div class="col-2 col-md-1">
+                            <div class="about-heading">
+                                <span class="bg-green"> </span>
+                                <h2 class="green">About Us</h2>
+                            </div>
+                        </div>
+
+                        <div class="col-10 col-md-11 col-lg-5">
+                            <div class="amout-img">
+                                <img src="../../../assets/images/img-what-we-do.webp" class="img-fluid" alt="About-Us-Image" />
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-6 mt-5 mt-lg-0 d-flex align-items-center justify-content-left">
+                            <div class="about-content">
+                                <h2 class="heading yellow">What is the Triend Travel App?</h2>
+                                <p class="para">
+                                    Let’s break this down. Triend is a user-led content sharing platform for like minded people who value real opinions of other travellers’ experiences around the world. It’s for the next generation that want to discover, personalise and experience travel in a new way post Covid-19. It’s for the travellers that want to do things differently, who want to help and support each other, so we can all keep sustainably travelling in this new world, post pandemic.                                </p>
+                                <!-- <button type="button"> Learn More <span><i class="fa fa-long-arrow-right"></i></span> </button> -->
+                                <a class="btn-learn" onClick="document.getElementById('download').scrollIntoView();">
+                  Get started <span><i class="fa fa-long-arrow-right"></i></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 mt-5" id="what">
+                <div class="what-we-section">
+                    <div class="row">
+                        <div class="col-12 col-lg-6 mb-5 mb-lg-0 d-flex align-items-center justify-content-left">
+                            <div class="what-we-content">
+                                <h2 class="heading yellow">Why join the Triend Community? 
+                                </h2>
+                                <p class="para">
+                                    You understand there is a need for travel to change. You love to travel globally or discover travel from your couch. You love community and get inspired by like minded people and trend setters. You believe in discovering new experiences, different from the normal tourist traps. You believe in ‘circular travel’. A concept where we can all help each other keep travelling and create a new sustainable future.
+                                    If you answered yes to any of the above, we should be friends and you need to download the triend app now! 
+                                </p>
+                                <!-- <button type="button"> Learn More <span><i class="fa fa-long-arrow-right"></i></span> </button> -->
+                                <a href="#contact" class="btn-learn">
+                  Learn More <span><i class="fa fa-long-arrow-right"></i></span>
+                </a>
+                            </div>
+                        </div>
+                        <!-- end of col-md-6 -->
+
+                        <div class="col-10 col-md-11 col-lg-5">
+                            <div class="what-we-img">
+                                <img src="../../../assets/images/img-about-us.webp" class="img-fluid" alt="what-we-Image" />
+                            </div>
+                        </div>
+                        <!-- end of col-md-5 -->
+
+                        <div class="col-2 col-md-1">
+                            <div class="what-we-heading">
+                                <span class="bg-green"> </span>
+                                <h2 class="green">What We Do</h2>
+                            </div>
+                        </div>
+                        <!-- end of col-1 -->
+                    </div>
+                    <!-- end of row -->
+                </div>
+            </div>
+            <!-- end of col-12 -->
+        </div>
+        <!-- end of row -->
+    </div>
+</section>
+<!-- End of Second Section -->
+
+<!-- Features Section -->
+<section class="features-section custom-padding" id="app">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-heading text-center">
+                    <h2 class="heading yellow d-inline-block">App Features</h2>
+                    <p class="para">
+                        Think Instagram meets Depop. Triend is half content platform, half travel shop. Whether you want to find travel inspiration and connect with real travellers or book your next getaway, Triend allows you to discover experiences you have never even heard
+                        of, all through trusted users.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="feature-width">
+            <div class="row">
+                <div class="col-12 col-md-6 order-2 order-xl-1 col-xl-4">
+                    <div class="feature-aside">
+                        <span (mouseover)="changeExtraFeaureImages('feature-phn-5.png')">
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="feature-aside-logo">
+                                        <img src="assets/images/feature-1.png" class="img-fluid" />
+                                    </div>
+                                </div>
+
+                                <div class="col-9">
+                                    <div class="feature-aside-text pt-3">
+                                        <h4 class="yellow">Upload Your Triend</h4>
+                                        <p class="para">
+                                        By uploading images and videos to create your favourite trips, others will not only be inspired by your trips but also given the opportunity to purchase your personalised experiences.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </span>
+                    </div>
+
+                    <div class="feature-aside">
+                        <span (mouseover)="changeExtraFeaureImages('feature-phn-4.png')">
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="feature-aside-logo">
+                                        <img src="assets/images/feature-2.png" class="img-fluid" />
+                                    </div>
+                                </div>
+
+                                <div class="col-9">
+                                    <div class="feature-aside-text pt-3">
+                                        <h4 class="yellow">Personalisation</h4>
+                                        <p class="para">
+                                        We are all different in this world. Here at Triend we know
+                                        this. Our app will learn your travel loves and recommend
+                                        where and what you should experience on your next journey
+                                        suited to your interests.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </span>
+                    </div>
+
+                    <div class="feature-aside">
+                        <span (mouseover)="changeExtraFeaureImages('feature-phn-1.png')">
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="feature-aside-logo">
+                                        <img src="assets/images/feature-3.png" class="img-fluid" />
+                                    </div>
+                                </div>
+
+                                <div class="col-9">
+                                    <div class="feature-aside-text pt-3">
+                                        <h4 class="yellow">Discover</h4>
+                                        <p class="para">
+                                        Whether you want to find new experiences, be it a wellness
+                                        retreat, staycation or an off the beat adventure trail.
+                                        Triend has the hottest travel platform in town which will
+                                        let you discover other travellers experiences.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+                <!-- end of col-xl-4 -->
+
+                <div class="col-12 col-md-12 col-xl-4 order-1 order-xl-2 feature-center-center">
+                    <div class="feature-center text-center">
+                        <!-- <img src="assets/images/feature-phn-6.png" class="img-fluid" alt=""> -->
+                        <img [src]="extraFeatureImage" class="img-fluid" />
+                    </div>
+                </div>
+                <!-- end of col-xl-4 -->
+
+                <div class="col-12 col-md-6 order-2 order-xl-3 col-xl-4">
+                    <div class="feature-aside">
+                        <span (mouseover)="changeExtraFeaureImages('feature-phn-6.png')">
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="feature-aside-logo">
+                                        <img src="assets/images/feature-4.png" class="img-fluid" />
+                                    </div>
+                                </div>
+
+                                <div class="col-9">
+                                    <div class="feature-aside-text pt-3">
+                                        <h4 class="yellow">Earn</h4>
+                                        <p class="para">
+                                        Create your own marketplace and travel shop. Let others
+                                        see what activities you did, where you stayed and what you
+                                        experienced. If they book your trip, you make money.
+                                        Simple as that!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </span>
+                    </div>
+
+                    <div class="feature-aside">
+                        <span (mouseover)="changeExtraFeaureImages('feature-phn-2.png')">
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="feature-aside-logo">
+                                        <img src="assets/images/feature-5.png" class="img-fluid" />
+                                    </div>
+                                </div>
+
+                                <div class="col-9">
+                                    <div class="feature-aside-text pt-3">
+                                        <h4 class="yellow">Rate your Triender</h4>
+                                        <p class="para">
+                                        Rate other Trienders on their trips and experiences. Were they really helpful in planning your Yoga Retreat in Sri Lanka, Music Festival in Iceland or Runcation in the UK? Let them know and build their trusted community.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </span>
+                    </div>
+
+                    <div class="feature-aside">
+                        <span (mouseover)="changeExtraFeaureImages('feature-phn-3.png')">
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="feature-aside-logo">
+                                        <img src="assets/images/feature-6.png" class="img-fluid" />
+                                    </div>
+                                </div>
+
+                                <div class="col-9">
+                                    <div class="feature-aside-text pt-3">
+                                        <h4 class="yellow">Book your trip</h4>
+                                        <p class="para">
+                                        Save hours of website searching with untrusted businesses.
+                                        Book all your required travel in one place. With the
+                                        confidence of authentic recommendations. From your flights
+                                        and accommodation to experiences and events. Triend really
+                                        is your one-stop travel marketplace.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+                <!-- end of col-xl-4 -->
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End of Features Section -->
+
+<!---Who Section-->
+<section class="second-section custom-padding" id="about-section">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 mb-0 mb-lg-5" id="about">
+                <div class="about-us-section">
+                    <div class="row">
+                        <div class="col-2 col-md-1">
+                            <div class="about-heading">
+                                <span class="bg-green"> </span>
+                                <h2 class="green">Who creates travel triends?</h2>
+                            </div>
+                        </div>
+
+                        <div class="col-10 col-md-11 col-lg-5">
+                            <div class="amout-img">
+                                <img src="../../../assets/images/Image 4.webp" class="img-fluid" alt="snorkle-Image" />
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-6 mt-5 mt-lg-0 d-flex align-items-center justify-content-left">
+                            <div class="about-content">
+                                <h2 class="heading yellow">Who creates travel triends?</h2>
+                                <p class="para">All Triend app experiences are posted by travellers just like you. Once you’ve signed up and created your free triend travel app account, you can upload your trip experiences and start to share them with other #triendsetters just like you. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 mt-5" id="what">
+                <div class="what-we-section">
+                    <div class="row">
+                        <div class="col-12 col-lg-6 mb-5 mb-lg-0 d-flex align-items-center justify-content-left">
+                            <div class="what-we-content">
+                                <h2 class="heading yellow">Travel Triend Inspiration</h2>
+                                <p class="para">Scan for triends and discover new trip experiences. </p>
+                                <h2 class="heading yellow">Personalise Triends</h2>
+                                <p class="para">Update your preferences and we’ll tailor suggested trienders. </p>
+                                <h2 class="heading yellow">Discover & Book</h2>
+                                <p class="para">Create your own bucket list or book a trienders itinerary. </p>
+                                <h2 class="heading yellow">Pass It On</h2>
+                                <p class="para">Share the love and receive donations from trienders you have helped. </p>
+                                                                                                            
+                            </div>
+                        </div>
+                        <!-- end of col-md-6 -->
+
+                        <div class="col-10 col-md-11 col-lg-5">
+                            <div class="what-we-img">
+                                <img src="assets/images/../../../assets/images/Image 1.webp" class="img-fluid" alt="yoga-Image" />
+                            </div>
+                        </div>
+                        <!-- end of col-md-5 -->
+
+                        <div class="col-2 col-md-1">
+                            <div class="what-we-heading">
+                                <span class="bg-green"> </span>
+                                <h2 class="green">How does it work?</h2>
+                            </div>
+                        </div>
+                        <!-- end of col-1 -->
+                    </div>
+                    <!-- end of row -->
+                </div>
+            </div>
+            <!-- end of col-12 -->
+        </div>
+        <!-- end of row -->
+    </div>
+</section>
+
+
+
+<!-- Trending Section -->
+<section class="trending-section custom-padding bg-green">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-11 col-xl-10">
+                <div class="team-slider text-left">
+                    <h2 class="heading blakck d-inline-block">Triending Now</h2>
+
+                    <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
+                        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+                            <div class="slider-card mt-4 mt-lg-5">
+                                <div class="slider-content">
+                                    <div class="slider-top mb-2">
+                                        <div class="row">
+                                            <div class="col-10">
+                                                <div class="row">
+                                                    <div class="col-3">
+                                                        <div>
+                                                            <img src="{{ slide.trendPerson }}" class="img-fluid" alt="" />
+                                                        </div>
+                                                    </div>
+                                                    <!-- end of col-2 -->
+
+                                                    <div class="col-9 pl-0">
+                                                        <div class="slider-top-client">
+                                                            <h4 class="black">{{ slide.trendName }}</h4>
+                                                            <span class="black"> {{ slide.trendDate }} </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class="trending-client-share">
+                                                    <!-- <a href="#"> <img src="assets/images/share.png" class="ml-auto" alt=""> </a> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end of slider-top -->
+
+                                    <div class="slider-middle">
+                                        <img src="{{ slide.trendEvent }}" class="img-fluid" alt="" />
+                                    </div>
+                                    <!-- end of slider-middle -->
+
+                                    <div class="slider-bottom">
+                                        <h3>{{ slide.trendDetail }}</h3>
+                                    </div>
+                                    <!-- end of slider-bottom -->
+                                </div>
+                            </div>
+                            <!-- end of slider-card-->
+                        </div>
+                    </ngx-slick-carousel>
+                    <!-- <button class="slick-next slick-arrow trending-next" aria-label="Next" type="button"> See All </button> -->
+                </div>
+                <!-- team-slider-->
+            </div>
+            <!-- end of col-10 -->
+        </div>
+        <!-- end of row -->
+    </div>
+</section>
+<!-- End of Trending Section -->
+
+<app-team></app-team>
+
+<app-contact-us></app-contact-us>
+
+<app-get-the-app></app-get-the-app>
+
+<app-footer></app-footer>

@@ -1,0 +1,47 @@
+<header style="background-color: #171c1a">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <div class="partner-header">
+            <a
+              href="Javascript:void();"
+              routerLink=""
+              routerLinkActive="link-active"
+            >
+              <img src="assets/images/brand-logo.png" class="img-fluid"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <section class="contact-sec bg-black custom-padding trip-sec">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="contact-content text-center">
+            <h2 class="heading yellow">Trip Details</h2>
+            <!-- <p class="para black pt-3"> Want To Impact The Travel Industry And Be A Part Of Revolution? <br /> partner With Us Now! </p> -->
+
+            <div class="row mt-5" *ngIf="tripDetails">
+                <div class="col-12 col-md-6 col-xl-4" *ngFor="let data of tripDetails.trip_details">
+                    <div class="trip-card">
+                        <ul>
+                            <li> <span>Trip :</span> {{data?.trip_name}} </li>
+                            <li> <span>Activities :</span> {{data?.activities_events}} </li>
+                            <li> <span>Provider :</span> {{data?.provider_of_activity}} </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <app-footer></app-footer>
+
+  

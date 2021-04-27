@@ -1,0 +1,175 @@
+.contact-sec {
+    padding-top: 58px;
+    padding-bottom: 59px;
+}
+
+.contact-content h2 {
+    display: inline-block;
+}
+
+.contact-content .heading:after {
+    content: " ";
+    position: absolute;
+    bottom: -10px;
+    left: 3px;
+    border-bottom: 3px solid #000;
+    width: 72%;
+}
+
+.contact-content form input {
+    width: 100%;
+    border-bottom: 1px solid #000;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 14px;
+    padding: 10px 10px 15px 0px;
+    background-color: transparent;
+    font-family: "f-regular";
+    font-weight: 700;
+    margin-bottom: 50px;
+    height: auto;
+    border-radius: 0;
+}
+
+.contact-content form textarea {
+    width: 100%;
+    border-bottom: 1px solid #000;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 14px;
+    padding: 10px 10px 15px 0px;
+    background-color: transparent;
+    font-family: "f-regular";
+    font-weight: 700;
+    margin-bottom: 70px;
+    height: 50px;
+    border-radius: 0;
+}
+
+.contact-content form input:focus,
+.contact-content form textarea:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.contact-content .contact-send-btn button {
+    background: #000;
+    border: 1px solid transparent;
+    border-radius: 35px;
+    color: #fff;
+    font-size: 14px;
+    padding: 12px 45px;
+    outline: none;
+    font-family: "f-regular";
+    text-decoration: none;
+}
+
+.contact-content form input::placeholder,
+.contact-content form textarea::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #000;
+    opacity: 1;
+    /* Firefox */
+}
+
+.contact-content form input:-ms-input-placeholder,
+.contact-content form textarea:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #000;
+}
+
+.contact-content form input::-ms-input-placeholder,
+.contact-content form textarea::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #000;
+}
+
+.invalid-feedback {
+    width: 100%;
+    margin-top: 0.25rem;
+    font-size: 80%;
+    color: #ff0000;
+    position: absolute;
+    width: 100%;
+    bottom: 26px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.contact-textarea .invalid-feedback {
+    width: 100%;
+    margin-top: 0.25rem;
+    font-size: 80%;
+    color: #ff0000;
+    position: absolute;
+    width: 100%;
+    top: 53px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.partner-header {
+    padding: 16px 0px 16px 260px;
+}
+
+.partner-header img {
+    width: 12%;
+}
+
+
+/* ********************* Media Query ********************** */
+
+@media screen and (max-width: 1440px) {
+    .partner-header {
+        padding-left: 50px;
+    }
+}
+
+@media screen and (max-width: 1366px) {}
+
+@media screen and (max-width: 1280px) {}
+
+@media screen and (max-width: 1024px) {
+    .contact-sec {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        display: flex;
+        height: 90.2vh;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact-content form textarea {
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .contact-content form input {
+        font-size: 10px;
+    }
+    .contact-sec {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .partner-header {
+        padding-left: 0;
+    }
+    .partner-header img {
+        width: 56%;
+    }
+    .partner-header {
+        padding: 15px 0px 5px 0px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 375px) {}
+
+@media screen and (max-width: 360px) {}
+
+@media screen and (max-width: 320px) {}

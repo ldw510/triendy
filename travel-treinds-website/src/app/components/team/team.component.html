@@ -1,0 +1,34 @@
+
+
+
+
+
+<section class="custom-padding team-section" id="team">
+    <div class="container-fluid ">
+        <div class="row">
+            <div class="col-12">
+                <div class="team-slider text-center">
+                    <h2 class="heading yellow"> Our Team </h2>
+
+                    <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
+                        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+                            <div class="slider-card">
+                                <div class="slider-content text-center">
+                                    <img src="{{slide.clientPhoto}}" class="team-img img-fluid" alt="Team-1">
+                                    <h3 class="sub-heading green"> {{ slide.clientName }} </h3>
+                                    <h4> {{ slide.clientDesignation }} </h4>
+                                    <p class="para"> {{ slide.clientDetails }} </p>                                    
+                                    <ul class="team-social">
+                                        <li> <a href="{{ slide.clientInsta }}"> <img src="assets/images/team-instagram.png" alt="Team-Instagram"> </a> </li>
+                                        <li *ngIf="slide.clientLink"> <a href="{{ slide.clientLink }}"> <img src="assets/images/team-linkdin.png" alt="Team-Instagram"> </a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </ngx-slick-carousel>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,60 @@
+<!--
+  Travel Triends
+  Created By harshit Soni 23/09/2020
+  Copyright © 2020 SiyatechVentures.All rights reserved.
+ -->
+
+<!-- Navigation Section -->
+<header id="header">
+    <nav class="navbar navbar-expand-xl fixed-top custom-padding" id="banner">
+        <div class="container-fluid border-bottom">
+            <a class="navbar-brand" href="#bannerTop">
+                <img src="assets/images/brand-logo.png" class="img-fluid" alt="Brand-logo" /></a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="fa fa-bars"></span>
+      </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto" id="menu">
+                    <li class="nav-item active">
+                        <a class="nav-link scroll" (click)="nav('bannerTop-section')"> Home </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link scroll" (click)="nav('about-section')"> About </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link scroll" (click)="nav('what')"> What We Do </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link scroll" (click)="nav('app')"> App Feature </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link scroll" (click)="nav('contact')"> Partner </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link scroll" (click)="nav('download')"> Download </a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/ethos"> Ethos </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <button type="button" routerLink="/partner" class=""> Contact Us </button>
+                    </li>
+
+                    <!-- <li class="nav-item">
+            <a class="nav-link" href="#"> <img src="assets/images/search-icon.png" alt="Search-Icon"> </a>
+          </li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<!-- End of Navgation Section -->

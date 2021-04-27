@@ -1,0 +1,376 @@
+/* You can add global styles to this file, and also import other style files */
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px;
+}
+
+
+/* ****************** Custom CSS ************** */
+
+button:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+.custom-padding {
+    padding-left: 65px;
+    padding-right: 65px;
+}
+
+
+/* ******************* Fonts CSS ************* */
+
+@font-face {
+    font-family: "f-bold";
+    src: url("../src/assets/fonts/Report School Regular.ttf");
+}
+
+@font-face {
+    font-family: "f-medium";
+    src: url("../src/assets/fonts/Report School Regular.ttf");
+}
+
+@font-face {
+    font-family: "f-regular";
+    src: url("../src/assets/fonts/Report School Regular.ttf");
+}
+
+@font-face {
+    font-family: "f-semibold";
+    src: url("../src/assets/fonts/Report School Regular.ttf");
+}
+
+
+/* ************** Color CSS ***************** */
+
+.black {
+    color: #000 !important;
+}
+
+.white {
+    color: #fff;
+}
+
+.green {
+    color: #00FECA;
+}
+
+.yellow {
+    color: #FDF200;
+}
+
+.pink {
+    color: #F01495;
+}
+
+.grey {
+    color: #7B7B7B;
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+.bg-black {
+    background-color: #000;
+}
+
+.bg-green {
+    background-color: #00FECA;
+}
+
+.bg-yellow {
+    background-color: #FDF200;
+}
+
+video:focus {
+    outline: none !important;
+    text-decoration: none;
+}
+
+
+/* ************** Heading CSS ************** */
+
+.heading {
+    font-size: 32px;
+    font-weight: 600;
+    font-family: "f-semibold";
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    position: relative;
+    margin-bottom: 35px;
+}
+
+.heading:after {
+    content: " ";
+    position: absolute;
+    bottom: -10px;
+    left: 3px;
+    border-bottom: 3px solid #FDF200;
+    width: 15%;
+}
+
+.para {
+    font-size: 14px;
+    font-family: "f-semibold";
+    line-height: 30px;
+    font-weight: 600;
+    letter-spacing: 0.27px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+}
+
+
+/* ************* Buttons CSS ************* */
+
+
+/* ************* Banner Section Slider CSS *********** */
+
+.banner-slider .slick-next.slick-arrow {
+    top: unset;
+    left: 60px;
+    bottom: -40px;
+}
+
+.banner-slider .slick-prev.slick-arrow {
+    top: unset;
+    right: auto;
+    left: -10px;
+    bottom: -40px;
+}
+
+.banner-slider button.slick-next:before {
+    background-image: url('../src/assets/images/arrow-right.png');
+    background-size: 86%;
+    content: "";
+    background-repeat: no-repeat;
+    opacity: 1;
+    position: absolute;
+    width: 54px;
+    height: 54px;
+}
+
+.banner-slider button.slick-prev:before {
+    background-image: url('../src/assets/images/arrow-left.png');
+    background-size: 86%;
+    content: "";
+    background-repeat: no-repeat;
+    opacity: 1;
+    position: absolute;
+    width: 54px;
+    height: 54px;
+}
+
+
+/* ************** Team Section Slider CSS ************* */
+
+.team-section .slick-next.slick-arrow {
+    top: -65px;
+    right: 50px;
+}
+
+.team-section .slick-prev.slick-arrow {
+    top: -65px;
+    right: 110px;
+    left: auto;
+}
+
+.team-section button.slick-next:before {
+    background-image: url('../src/assets/images/arrow-right.png');
+    background-size: 86%;
+    content: "";
+    background-repeat: no-repeat;
+    opacity: 1;
+    position: absolute;
+    width: 54px;
+    height: 54px;
+}
+
+.team-section button.slick-prev:before {
+    background-image: url('../src/assets/images/arrow-left.png');
+    background-size: 86%;
+    content: "";
+    background-repeat: no-repeat;
+    opacity: 1;
+    position: absolute;
+    width: 54px;
+    height: 54px;
+}
+
+
+/* *************** Trending Section CSS *************** */
+
+
+/* .trending-section button.slick-next {
+    display: none !important;
+} */
+
+.trending-section button.slick-next {
+    content: "See All";
+    color: #F01495;
+    font-size: 14px;
+    display: block !important;
+    line-height: 133px;
+    font-weight: 500;
+    font-family: "f-semibold";
+    width: 47px;
+    right: -125px;
+    text-align: center;
+    height: 75px;
+    top: 54%;
+    transform: translate(0, -40%);
+}
+
+.trending-section button.slick-next:before {
+    background-image: url('../src/assets/images/trending-arrow.png');
+    background-size: 86%;
+    content: "";
+    background-repeat: no-repeat;
+    opacity: 1;
+    position: absolute;
+    width: 54px;
+    height: 54px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.trending-section button.slick-prev {
+    display: none !important;
+}
+
+
+/* ************** Modal CSS ********** */
+
+@media screen and (max-width: 1440px) {}
+
+@media screen and (max-width: 1366px) {}
+
+@media screen and (max-width: 1280px) {}
+
+@media screen and (max-width: 1024px) {
+    .banner-slider button.slick-prev:before {
+        width: 44px;
+        height: 44px;
+    }
+    .banner-slider button.slick-next:before {
+        width: 44px;
+        height: 44px;
+    }
+    .banner-slider .slick-next.slick-arrow {
+        top: unset;
+        left: 40px;
+        bottom: -40px;
+    }
+    .trending-section button.slick-next {
+        right: -55px;
+        top: 49%;
+    }
+    .trending-section .slider-bottom h3 {
+        font-size: 18px;
+        line-height: 25px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .custom-padding {
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+    .heading {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    .team-section button.slick-prev:before,
+    .team-section button.slick-next:before {
+        background-size: 60%;
+    }
+    .team-section .slick-prev.slick-arrow,
+    .team-section .slick-next.slick-arrow {
+        top: -45px;
+    }
+    .team-section .slick-prev.slick-arrow {
+        right: 90px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .custom-padding {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .heading {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .para {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .team-section .slick-prev.slick-arrow {
+        top: unset;
+        bottom: 0px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+    .team-section .slick-next.slick-arrow {
+        top: unset;
+        bottom: 0px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+    .team-section button.slick-prev:before,
+    .team-section button.slick-next:before {
+        background-size: 100%;
+    }
+    .team-section button.slick-prev:before,
+    .team-section button.slick-next:before {
+        background-size: 95%;
+        width: 30px;
+        height: 30px;
+    }
+    .team-section .slick-prev.slick-arrow,
+    .team-section .slick-next.slick-arrow {
+        top: unset;
+        bottom: -15px;
+        left: -80px;
+    }
+    .team-section .slick-next.slick-arrow {
+        left: -00px;
+    }
+    /* ******** Trending section css ********** */
+    .trending-section button.slick-next:before {
+        background-size: 100%;
+        width: 38px;
+        height: 38px;
+    }
+    .trending-section button.slick-next {
+        line-height: 100px;
+        top: 53%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .custom-padding {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .banner-slider button.slick-prev:before,
+    .banner-slider button.slick-next:before {
+        background-size: 58%;
+    }
+    .banner-slider .slick-prev.slick-arrow {
+        bottom: -20px;
+    }
+    .banner-slider .slick-next.slick-arrow {
+        top: unset;
+        left: 30px;
+        bottom: -20px;
+    }
+}

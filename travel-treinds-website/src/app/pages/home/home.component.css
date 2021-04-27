@@ -1,0 +1,967 @@
+.body {
+  color: #171C1A;
+}
+.banner-overlay {
+    position: relative;
+    background-color: #171C1A;
+}
+
+.hero-heading {
+    position: absolute;
+    margin: 0 auto;
+    left: 50%;
+    width: 50%;
+    text-align: center;
+}
+
+.banner-overlay::before {
+    content: "";
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-color: #171C1A(0, 0, 0, 0.8);
+    top: 0;
+    z-index: 2;
+}
+
+.banner-section {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 9;
+    left: 50%;
+    height: 100%;
+    width: 50%;
+    background-color: #171C1A;
+    display: flex;
+}
+
+.banner-section.custom-padding {
+    display: none;
+}
+
+.banner-video-section {
+    position: relative;
+}
+
+.banner-video-section video {
+    width: 50%;
+    height: 100vh;
+    object-fit: cover;
+    background-color: #171C1A;
+}
+
+.banner-section .banner-heading {
+    padding-right: 50px;
+}
+
+.col-12.col-xl-6 {
+    flex: auto;
+    max-width: 100%;
+}
+
+.hero-heading h1.main-heading {
+    font-size: 40px;
+    font-family: "f-semibold";
+    font-weight: 600;
+    line-height: 70px;
+    text-align: center;
+    letter-spacing: 2.11px;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 6px #000000CF;
+    margin-top: 300px;
+    display: block;
+}
+
+.hero-heading h2.para {
+    color: #FDF200;
+    text-align: center;
+    font-size: 22px;
+    font-family: "f-regular" !important;
+    font-weight: normal;
+    letter-spacing: 0.27px;
+    margin: 25px 0;
+    padding-right: 0px;
+    display: block;
+}
+
+.hero-heading button {
+    border: 2px solid #FDF200;
+    border-radius: 35px;
+    color: #FDF200;
+    background-color: transparent;
+    padding: 15px 13px 15px 23px;
+    font-weight: 100;
+    font-family: "f-regular";
+    margin-left: 37%;
+    margin-top: 60px;
+    display: flex;
+    position: absolute;
+    z-index: 99;
+}
+
+.hero-heading button span {
+    margin-left: 15px;
+}
+
+.banner-section .banner-pause img {
+    width: 140px;
+    margin-top: 120px;
+    margin-bottom: 20px;
+}
+
+.banner-slider {
+    padding-top: 100px;
+}
+
+.banner-slider .slider-bottom {
+    padding-right: 110px;
+}
+
+
+/* .banner-slider .slick-slide .slider-middle img {
+    width: 100%;
+} */
+
+.banner-slider .slick-slide .slider-middle video {
+    width: 100%;
+    height: 230px;
+}
+
+.banner-slider .slider-top .slider-top-client {
+    margin-left: -9px;
+    margin-top: -4px;
+}
+
+
+/* .banner-slider .slick-slide img {
+    width: 100%;
+} */
+
+.banner-slider .slider-top h4 {
+    font-family: "f-regular";
+    font-weight: bold;
+    font-size: 14px;
+    margin: 10px 0 0px 0;
+}
+
+.banner-slider .slider-top span {
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.banner-client-share {
+    padding-top: 22px;
+}
+
+.banner-slider .slider-card {
+    padding-right: 25px;
+}
+
+.banner-slider .slider-bottom h3 {
+    font-family: "f-regular";
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+    line-height: 30px;
+    margin-top: 12px;
+}
+
+
+/* .slider-middle video[poster]{
+    object-position: center center;
+    background-color: #fff;
+    object-fit: scale-down;
+} */
+
+.web-design {
+    display: block;
+}
+
+.mobile-design {
+    display: none;
+}
+
+
+/* **************** Section Section ************ */
+.para {
+    text-transform: none;
+}
+
+.second-section {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-color: #171C1A;
+    margin-top: -6px;
+}
+
+.about-heading {
+    position: relative;
+    height: 580px;
+}
+
+.about-us-section .about-content {
+    padding-right: 120px;
+}
+
+.about-us-section .about-heading h2 {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    bottom: 150px;
+    font-size: 32px;
+    font-weight: 600;
+    font-family: "f-semibold";
+    letter-spacing: 1px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.about-us-section .about-heading span {
+    position: absolute;
+    content: " ";
+    left: 0;
+    bottom: 0px;
+    height: 125px;
+    width: 3px;
+    right: 0;
+    margin: 0 auto;
+}
+
+.about-us-section .about-content p {
+    font-size: 14px;
+    line-height: 40px;
+    margin-bottom: 24px;
+    font-family: "f-semibold";
+}
+
+.about-us-section .about-content a.btn-learn {
+    background: #FDF200;
+    border: 2px solid #FDF200;
+    border-radius: 35px;
+    font-size: 14px;
+    padding: 12px 25px;
+    font-family: "f-regular";
+    font-weight: 600;
+    color: #000;
+}
+
+.about-us-section .about-content a.btn-learn span i.fa {
+    color: #000;
+    margin-left: 8px;
+    font-size: 14px;
+    vertical-align: text-bottom;
+}
+
+.what-we-heading {
+    position: relative;
+    height: 580px;
+}
+
+.what-we-section .what-we-content {
+    padding-left: 120px;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.what-we-section .what-we-content h2 {
+    display: inline-block;
+}
+
+.what-we-section .what-we-content h2.heading:after {
+    content: " ";
+    position: absolute;
+    bottom: -10px;
+    right: 3px;
+    left: unset;
+    border-bottom: 3px solid #FDF200;
+    width: 42%;
+}
+
+.what-we-section .what-we-img {
+    text-align: right;
+}
+
+.what-we-section .what-we-heading h2 {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    bottom: 150px;
+    font-size: 32px;
+    font-weight: 600;
+    font-family: "f-semibold";
+    letter-spacing: 1px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.what-we-section .what-we-heading span {
+    position: absolute;
+    content: " ";
+    left: 0;
+    bottom: 0px;
+    height: 125px;
+    width: 3px;
+    right: 0;
+    margin: 0 auto;
+}
+
+.what-we-section .what-we-content p {
+    font-size: 14px;
+    line-height: 40px;
+    margin-bottom: 24px;
+    font-family: "f-semibold";
+}
+
+.what-we-section .what-we-content a.btn-learn {
+    background: #FDF200;
+    border: 2px solid #FDF200;
+    border-radius: 35px;
+    font-size: 14px;
+    padding: 12px 25px;
+    font-family: "f-regular";
+    font-weight: 600;
+    color: #000;
+}
+
+.what-we-section .what-we-content a.btn-learn span i.fa {
+    color: #000;
+    margin-left: 8px;
+    font-size: 14px;
+    vertical-align: text-bottom;
+}
+
+
+/* ***************** Features Section CSS ***************** */
+
+.features-section {
+/*    background-image: url('../../../assets/images/feature-bg.png'); */
+    background-color: #171C1A;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.features-section .section-heading h2.heading:after {
+    content: " ";
+    position: absolute;
+    bottom: -10px;
+    left: 3px;
+    width: 52%;
+}
+
+.features-section .section-heading p {
+    width: 38%;
+    margin: 0 auto 80px auto;
+}
+
+.features-section .feature-aside {
+    margin-top: 75px;
+}
+
+.features-section .feature-aside .feature-aside-text {
+    text-align: left;
+    margin-left: -45px;
+}
+
+.features-section .feature-aside .feature-aside-text h4 {
+    font-family: "f-semibold";
+    font-weight: normal;
+    letter-spacing: 1px;
+    font-size: 18px;
+    margin: 10px 0 10px 0;
+}
+
+.feature-center-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* ***************** Trending Section CSS **************** */
+
+.trending-section {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.trending-section h2.heading:after {
+    content: " ";
+    position: absolute;
+    bottom: -10px;
+    left: 3px;
+    width: 52%;
+    border-color: #000;
+}
+
+.trending-section .slider-bottom {
+    padding-right: 110px;
+}
+
+.trending-section .slider-top .slider-top-client {
+    margin-left: -9px;
+    margin-top: -4px;
+}
+
+.trending-section .slider-top h4 {
+    font-family: "f-semibold";
+    font-weight: normal;
+    font-size: 18px;
+    margin: 10px 0 0px 0;
+}
+
+.trending-section .slider-top span {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.trending-client-share {
+    padding-top: 22px;
+}
+
+.trending-section .slider-card {
+    padding-right: 85px;
+}
+
+.slick-slide:focus {
+    outline: none;
+}
+
+.trending-section .slider-bottom h3 {
+    font-family: "f-semibold";
+    font-weight: normal;
+    letter-spacing: 1px;
+    font-size: 14px;
+    margin: 20px 0 10px 0;
+    line-height: 25px;
+    color: #000;
+}
+
+.only-web {
+    display: block;
+}
+
+.only-mobile {
+    display: none;
+}
+
+@media (min-width: 1440px) and (max-width: 1920px) {
+    .banner-section .banner-pause img {
+        width: 100px;
+        margin-top: unset;
+        margin-bottom: 20px;
+    }
+    .banner-section {
+        bottom: 90px;
+    }
+    .banner-slider {
+        padding-top: unset;
+    }
+    .banner-section .banner-heading h1.main-heading {
+        font-size: 45px;
+        font-family: "f-semibold";
+        font-weight: 600;
+        line-height: 70px;
+        letter-spacing: 2.11px;
+        color: #FFFFFF;
+        text-shadow: 0px 0px 6px #000000CF;
+        padding-right: 100px;
+    }
+    .features-section .feature-aside .feature-aside-text {
+        text-align: left;
+        margin-left: -20px;
+    }
+}
+
+@media screen and (max-width: 1640px) {
+    .banner-section {
+        bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .banner-section .banner-pause img {
+        margin-top: 0px;
+    }
+    .banner-section .banner-heading {
+        padding-right: 0px;
+    }
+    .banner-section .banner-heading h1.main-heading {
+        padding-right: 0px;
+    }
+    .banner-slider .slider-top .slider-top-client {
+        margin-left: 15px;
+        margin-top: -4px;
+    }
+    .banner-slider {
+        padding-top: 0px;
+        margin-top: -45px;
+    }
+    .trending-section .slick-slide .slider-middle img {
+        width: 100%;
+    }
+    .trending-section .slider-card {
+        padding-right: 45px;
+    }
+    .trending-section .slider-bottom {
+        padding-right: 30px;
+    }
+    .trending-client-share {
+        padding-top: 22px;
+    }
+    .trending-client-share a img {
+        width: 16px;
+    }
+    .trending-section .slider-top .slider-top-client {
+        margin-left: 11px;
+        margin-top: -4px;
+    }
+    .about-heading,
+    .what-we-heading {
+        height: 480px;
+    }
+    .features-section .feature-aside .feature-aside-text {
+        text-align: left;
+        margin-left: 0px;
+    }
+    .features-section .feature-aside {
+        margin-top: 0;
+    }
+    .features-section .section-heading p {
+        width: 60%;
+        margin: 0 auto 60px auto;
+    }
+    .features-section .feature-center {
+        padding-top: 25px;
+    }
+}
+
+@media (min-width: 1365px) and (max-width: 1439px) {
+    .banner-section {
+        padding-bottom: 20px;
+    }
+    .banner-slider {
+        padding-top: 30px;
+    }
+    .banner-section .banner-heading p.para {
+        margin: 20px 0 25px 0;
+    }
+    .banner-section .banner-pause img {
+        width: 110px;
+        margin-top: 40px;
+        margin-bottom: 0px;
+    }
+    .banner-section .banner-heading h1.main-heading {
+        padding-right: 0px;
+        line-height: 60px;
+        font-size: 48px;
+    }
+    .banner-slider .slider-bottom {
+        padding-right: 0px;
+    }
+    .banner-slider .slick-slide .slider-middle video {
+        width: 100%;
+        height: 190px;
+    }
+    .banner-slider {
+        padding-top: 0;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .banner-section {
+        padding-bottom: 20px;
+    }
+    .banner-section .banner-heading p.para {
+        margin: 20px 0 25px 0;
+    }
+    .banner-section .banner-pause img {
+        width: 110px;
+        margin-top: 40px;
+        margin-bottom: 0px;
+    }
+    .banner-section .banner-heading h1.main-heading {
+        padding-right: 0px;
+        line-height: 60px;
+        font-size: 48px;
+    }
+    .banner-slider .slider-bottom {
+        padding-right: 0px;
+    }
+    .about-heading,
+    .what-we-heading {
+        position: relative;
+        height: 470px;
+    }
+    .about-us-section .about-content,
+    .what-we-section .what-we-content {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    .about-us-section .about-content p,
+    .what-we-section .what-we-content p {
+        font-size: 14px;
+    }
+    .banner-slider .slick-slide .slider-middle video {
+        width: 100%;
+        height: 190px;
+    }
+    .banner-slider {
+        padding-top: 0;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .banner-section {
+        bottom: 0;
+    }
+    .banner-slider .slider-bottom {
+        padding-right: 0px;
+    }
+    .banner-slider .slider-top .slider-top-client {
+        margin-left: 25px;
+        margin-top: -4px;
+    }
+    .banner-slider {
+        padding-top: 40px;
+    }
+    .trending-section .slider-top .slider-top-client {
+        margin-left: 20px;
+        margin-top: -4px;
+    }
+    .about-heading,
+    .what-we-heading {
+        height: 420px;
+    }
+    .features-section .feature-center {
+        padding-top: 0px;
+        padding-bottom: 55px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .banner-overlay::before {
+        height: 64vh;
+    }
+    .banner-section .banner-pause img {
+        width: 80px;
+        margin-top: 0;
+        margin-bottom: 0px;
+    }
+    .banner-section .banner-heading h1.main-heading {
+        font-size: 38px;
+    }
+    .banner-section .banner-heading p.para {
+        margin: 10px 0 15px 0;
+    }
+    .banner-section {
+        align-items: center;
+    }
+    .banner-section {
+        bottom: 70px;
+    }
+    .banner-video-section video {
+        width: 100%;
+        height: 64vh;
+        -o-object-fit: cover;
+        object-fit: cover;
+    }
+    .banner-slider {
+        padding-top: 20px;
+    }
+    .trending-section .slider-card {
+        padding-right: 30px;
+    }
+    .about-heading,
+    .what-we-heading {
+        height: 380px;
+    }
+    .about-us-section .about-content p,
+    .what-we-section .what-we-content p {
+        line-height: 25px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero-heading {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        display: flex;
+       align-items: center;
+       justify-content: center;
+    }
+
+    .hero-heading h1.main-heading {
+        font-size: 40px;
+        font-family: "f-semibold";
+        font-weight: 600;
+        line-height: 70px;
+        text-align: center;
+        letter-spacing: 2.11px;
+        color: #FFFFFF;
+        text-shadow: 0px 0px 6px #000000CF;
+        margin-top: 200px;
+        display: flex;
+        position: absolute;
+    }
+    
+    .hero-heading h2.para {
+        color: #FDF200;
+        text-align: center;
+        font-size: 22px;
+        font-family: "f-regular" !important;
+        font-weight: normal;
+        letter-spacing: 0.27px;
+        display: flex;
+        margin-top: 400px;
+    }
+
+    .hero-heading button {
+        border: 2px solid #FDF200;
+        border-radius: 35px;
+        color: #FDF200;
+        background-color: transparent;
+        padding: 15px 13px 15px 23px;
+        font-weight: 100;
+        font-family: "f-regular";
+        margin: 0;
+        align-items: center;
+        position: absolute;
+        margin-top: 500px;
+        display: flex;
+    }
+
+    .banner-section {
+        position: relative;
+        bottom: 0px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        z-index: 9;
+        left: 50%;
+        height: 100%;
+        width: 100%;
+        background-color: #171C1A;
+    }
+    
+    .banner-video-section {
+        position: relative;
+    }
+    
+    .banner-video-section video {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        background-color: #171C1A;
+    }
+
+    
+.banner-section .banner-heading h1.main-heading {
+    display: none;
+}
+
+.banner-section .banner-heading h2.para {
+    display: none;
+}
+
+.banner-section .banner-heading button {
+    display: none;
+
+}
+    .baner-slider-bottom {
+        display: none;
+    }
+    .banner-overlay::before {
+        height: 85vh;
+    }
+    .trending-section {
+        padding-top: 50px;
+        padding-bottom: 40px;
+    }
+    .banner-video-section video {
+        width: 100%;
+        height: 85vh;
+        -o-object-fit: cover;
+        object-fit: cover;
+    }
+    .about-us-section .about-content,
+    .what-we-section .what-we-content {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .about-heading,
+    .what-we-heading {
+        height: 540px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .only-web {
+        display: none;
+    }
+    .only-mobile {
+        display: block;
+    }
+    .banner-overlay::before {
+        height: 100vh;
+    }
+    .web-design {
+        display: block;
+    }
+    .mobile-design {
+        display: none;
+        position: relative;
+    }
+    .banner-section {
+        bottom: 0px;
+    }
+    .mobile-design .baner-slider-bottom {
+        display: none;
+    }
+    .mobile-design .banner-section {
+        bottom: 0;
+        position: relative;
+        display: block;
+        margin-top: 110px;
+        margin-bottom: 100px;
+    }
+    .banner-slider .slider-top .slider-top-client {
+        margin-left: 5px;
+        margin-top: -4px;
+    }
+    .banner-slider .slick-slide .slider-middle video {
+        height: 260px;
+    }
+    .banner-slider .slider-card {
+        padding-right: 0;
+    }
+    .banner-video-section video {
+        height: 100vh;
+    }
+    .banner-section .banner-heading h1.main-heading {
+        padding-right: 0px;
+        line-height: 34px;
+        font-size: 28px;
+    }
+    .banner-pause {
+        display: none;
+    }
+    .banner-section .banner-heading p.para {
+        font-size: 12px;
+        line-height: 22px;
+    }
+    .trending-section .slider-card {
+        padding-right: 10px;
+    }
+    .trending-section .slider-top .slider-top-client {
+        margin-left: 0px;
+        margin-top: -12px;
+    }
+    .trending-section .slider-bottom {
+        padding-right: 0px;
+        text-align: center;
+    }
+    .trending-section .slider-bottom h3 {
+        letter-spacing: 0px;
+        font-size: 16px;
+        margin: 10px 0 0px 0;
+    }
+    .about-heading,
+    .what-we-heading {
+        height: 300px;
+    }
+    .about-us-section .about-heading span,
+    .what-we-section .what-we-heading span {
+        height: 85px;
+        width: 2px;
+    }
+    .about-us-section .about-heading h2,
+    .what-we-section .what-we-heading h2 {
+        font-size: 20px;
+        bottom: 100px;
+    }
+    .about-us-section .about-content p,
+    .what-we-section .what-we-content p {
+        margin-top: 24px;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .second-section {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .features-section {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .features-section .section-heading p {
+        width: 100%;
+        margin: 14px auto 20px auto;
+    }
+    .features-section .feature-aside {
+        margin-top: 0px;
+        text-align: center;
+    }
+    .features-section .feature-center {
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .mobile-design .banner-section {
+        margin-bottom: 58px;
+    }
+    .banner-section {
+        bottom: 0px;
+    }
+    .about-heading,
+    .what-we-heading {
+        height: 242px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .banner-section {
+        bottom: 0px;
+    }
+    .trending-section .slider-top .slider-top-client {
+        margin-left: 27px;
+        margin-top: -4px;
+    }
+    .trending-section .slider-top h4 {
+        font-size: 14px;
+    }
+    .trending-section .slider-top span {
+        font-size: 12px;
+    }
+    .banner-slider .slider-top .slider-top-client {
+        margin-left: 20px;
+        margin-top: -3px;
+    }
+    .mobile-design .banner-section {
+        margin-bottom: 60px;
+    }
+}

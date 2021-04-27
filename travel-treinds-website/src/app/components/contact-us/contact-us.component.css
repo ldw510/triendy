@@ -1,0 +1,468 @@
+.contact-sec {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.contact-content h2 {
+    display: inline-block;
+}
+
+.contact-content p.para {
+    font-family: "f-bold";
+    font-weight: 700;
+}
+
+.contact-content .heading:after {
+    content: " ";
+    position: absolute;
+    bottom: -10px;
+    left: 3px;
+    border-bottom: 3px solid #000;
+    width: 72%;
+}
+
+.contact-content form input,
+.contact-content form select {
+    width: 100%;
+    border-bottom: 1px solid #000;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 14px;
+    padding: 10px 10px 15px 0px;
+    background-color: transparent;
+    font-family: "f-regular";
+    font-weight: 700;
+    margin-bottom: 50px;
+    height: auto;
+    border-radius: 0;
+    color: #000;
+}
+
+.contact-content form textarea {
+    width: 100%;
+    border-bottom: 1px solid #000;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 14px;
+    padding: 10px 10px 15px 0px;
+    background-color: transparent;
+    font-family: "f-regular";
+    font-weight: 700;
+    margin-bottom: 70px;
+    height: 50px;
+    border-radius: 0;
+}
+
+.contact-content form input:focus,
+.contact-content form select:focus,
+.contact-content form textarea:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.contact-content .contact-send-btn button {
+    background: #000;
+    border: 2px solid #fdf200;
+    border-radius: 35px;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 25px;
+    font-family: 'f-regular';
+}
+
+.contact-content .contact-send-btn button span i.fa {
+    font-size: 14px;
+    margin-left: 3px;
+}
+
+.contact-content form input::placeholder,
+.contact-content form select::placeholder,
+.contact-content form textarea::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #000;
+    opacity: 1;
+    /* Firefox */
+}
+
+.contact-content form input:-ms-input-placeholder,
+.contact-content form input:-ms-select-placeholder,
+.contact-content form textarea:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #000;
+}
+
+.contact-content form input::-ms-input-placeholder,
+.contact-content form input::-ms-select-placeholder,
+.contact-content form textarea::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #000;
+}
+
+.invalid-feedback {
+    width: 100%;
+    margin-top: 0.25rem;
+    font-size: 80%;
+    color: #ff0000;
+    position: absolute;
+    width: 100%;
+    bottom: 26px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.contact-textarea .invalid-feedback {
+    width: 100%;
+    margin-top: 0.25rem;
+    font-size: 80%;
+    color: #ff0000;
+    position: absolute;
+    width: 100%;
+    top: 53px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.add-btn a {
+    background: transparent;
+    border: 2px solid #000;
+    border-radius: 30px;
+    color: #000;
+    padding: 12px 41px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+    font-family: "f-bold";
+    font-size: 13px;
+}
+
+
+/*------------------------------------------------------------------
+[Common Styles: See "Inputs - Switcher" for code below]
+*/
+
+
+/*------------------------------------------------------------------
+  [Inputs - Switcher]
+  */
+
+.admin-list {
+    margin-bottom: 50px;
+}
+
+.switch-button {
+    display: inline-block;
+    border-radius: 50px;
+    background-color: #b3b3b3;
+    width: 60px;
+    height: 27px;
+    padding: 4px;
+    position: relative;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.switch-button input[type="checkbox"] {
+    display: none;
+}
+
+.switch-button label {
+    border-radius: 50%;
+    -webkit-box-shadow: 0 0 1px 1px #fff inset;
+    box-shadow: 0 0 1px 1px #FFF inset;
+    background-color: #ffffff;
+    margin: 0;
+    height: 19px;
+    width: 19px;
+    z-index: 1;
+    display: inline-block;
+    cursor: pointer;
+    background-clip: padding-box;
+}
+
+.switch-button label:before {
+    position: absolute;
+    font-size: 12px;
+    font-weight: 600;
+    z-index: 0;
+    content: "OFF";
+    right: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 27px;
+    top: 0;
+    text-align: right;
+    padding-right: 10px;
+    color: #ffffff;
+}
+
+.switch-button input[type="checkbox"]:checked+span {
+    background-color: #F01495;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 4px;
+}
+
+.switch-button input[type="checkbox"]:checked+span label {
+    float: right;
+    border-color: #fe4d8e;
+}
+
+.switch-button input[type="checkbox"]:checked+span label:before {
+    position: absolute;
+    font-size: 12px;
+    font-weight: 600;
+    z-index: 0;
+    content: "ON";
+    color: #ffffff;
+    left: 0;
+    text-align: left;
+    /* padding-left: 10px; */
+    padding-left: 8px;
+    line-height: 23px;
+}
+
+.switch-button.switch-button-yesno label:before {
+    content: "NO";
+}
+
+.switch-button.switch-button-yesno input[type="checkbox"]:checked+span label:before {
+    content: "YES";
+}
+
+.switch-button.switch-button-xs {
+    height: 20px;
+    width: 53px;
+    line-height: 16px;
+    width: 50px;
+}
+
+.switch-button.switch-button-xs label {
+    height: 12px;
+    width: 12px;
+}
+
+.switch-button.switch-button-xs label:before {
+    line-height: 21px;
+}
+
+.switch-button.switch-button-sm {
+    height: 24px;
+    width: 57px;
+    line-height: 20px;
+}
+
+.switch-button.switch-button-sm label {
+    height: 16px;
+    width: 16px;
+}
+
+.switch-button.switch-button-sm label:before {
+    line-height: 25px;
+}
+
+.switch-button.switch-button-lg {
+    height: 23px;
+    line-height: 0;
+    width: 55px;
+    margin-left: 15px;
+}
+
+.switch-button.switch-button-lg label {
+    height: 15px;
+    width: 15px;
+}
+
+.switch-button.switch-button-lg label:before {
+    line-height: 22px;
+}
+
+.switch-button.switch-button-success {
+    background-color: #b3b3b3;
+}
+
+.switch-button.switch-button-success label {
+    border-color: #ababab;
+}
+
+.switch-button.switch-button-success input[type="checkbox"]:checked+span {
+    background-color: #34a853;
+}
+
+.switch-button.switch-button-success input[type="checkbox"]:checked+span label {
+    border-color: #2e9549;
+}
+
+.switch-button.switch-button-warning {
+    background-color: #b3b3b3;
+}
+
+.switch-button.switch-button-warning label {
+    border-color: #ababab;
+}
+
+.switch-button.switch-button-warning input[type="checkbox"]:checked+span {
+    background-color: #fbbc05;
+}
+
+.switch-button.switch-button-warning input[type="checkbox"]:checked+span label {
+    border-color: #e3aa04;
+}
+
+.switch-button.switch-button-danger {
+    background-color: #b3b3b3;
+}
+
+.switch-button.switch-button-danger label {
+    border-color: #ababab;
+}
+
+.switch-button.switch-button-danger input[type="checkbox"]:checked+span {
+    background-color: #ea4335;
+}
+
+.switch-button.switch-button-danger input[type="checkbox"]:checked+span label {
+    border-color: #e82e1e;
+}
+
+.backdrop {
+    width: 100%;
+    height: 100vh;
+}
+
+.modal {
+    display: none;
+    background: #000000a8 !important;
+}
+
+.modal-header.popup1 {
+    padding: 0px;
+    border-bottom: 0;
+}
+
+.ok-btn {
+    margin-top: 14px;
+    background: #fdf200;
+    border: 2px solid #fdf200;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 7px 14px;
+    font-family: f-regular;
+    font-weight: 600;
+    color: #000;
+}
+
+.country-dropdown:invalid {
+    color: green;
+}
+
+.country-dropdown [disabled] {
+    color: green;
+}
+
+
+/* ********************* Media Query ********************** */
+
+@media screen and (max-width: 1440px) {
+    .partner-header {
+        padding-left: 50px;
+    }
+}
+
+@media screen and (max-width: 1366px) {}
+
+@media screen and (max-width: 1280px) {}
+
+@media screen and (max-width: 1024px) {
+    .partner-header img {
+        width: auto;
+    }
+    .contact-sec {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        display: flex;
+        height: 90.2vh;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact-content form textarea {
+        margin-bottom: 50px;
+    }
+    .contact-sec {
+        display: flex;
+        height: 86.9vh;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .contact-content form input {
+        font-size: 10px;
+    }
+    .contact-sec {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        height: auto;
+        display: block;
+    }
+    .partner-header {
+        padding-left: 0;
+    }
+    .partner-header img {
+        width: 56%;
+    }
+    .partner-header {
+        padding: 15px 0px 5px 0px;
+        text-align: center;
+    }
+    .add-btn a {
+        background: transparent;
+        border: 2px solid #000;
+        border-radius: 30px;
+        color: #000;
+        padding: 8px 15px;
+        font-weight: 700;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        outline: none;
+        font-family: "f-bold";
+        font-size: 10px;
+    }
+    .switch-button.switch-button-lg {
+        margin-left: 0;
+    }
+    .add-btn.text-right {
+        padding-top: 14px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .switch-button.switch-button-lg {
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 360px) {}
+
+@media screen and (max-width: 320px) {
+    .add-btn.text-right {
+        padding-top: 14px;
+        margin-left: -20px;
+    }
+    .switch-button.switch-button-lg {
+        margin-left: 0px;
+    }
+}

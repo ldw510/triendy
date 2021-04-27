@@ -1,0 +1,150 @@
+
+
+
+
+
+
+
+.contact-sec {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.trip-sec {
+    min-height: 599px;
+    height: auto;
+}
+
+.contact-content h2 {
+    display: inline-block;
+}
+
+.contact-content p.para {
+    font-family: "f-bold";
+    font-weight: 700;
+}
+
+.contact-content .heading:after {
+    content: " ";
+    position: absolute;
+    bottom: -10px;
+    left: 3px;
+    border-bottom: 3px solid#FDF200;
+    width: 72%;
+}
+
+.partner-header {
+    padding: 16px 0px 16px 260px;
+}
+.partner-header img {
+    width: 12%;
+}
+
+.trip-card {
+    background-color: #00FECA;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 18px 4px rgba(225, 225, 225, 0.5);
+}
+
+.trip-card ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.trip-card ul li {
+    text-decoration: none;
+    text-align: left;
+    margin:0;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "f-semibold";
+    margin-bottom: 6px;
+    text-transform: capitalize;
+}
+
+.trip-card ul li:last-child {
+    margin-bottom: 0;
+}
+
+.trip-card ul li span {
+    font-family: "f-semibold";
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    font-size: 16px;
+    margin: 10px 0 10px 0;
+}
+
+.trip-card {
+    margin-bottom: 25px;
+}
+
+
+
+
+
+
+
+
+/* ********************* Media Query ********************** */
+@media screen and (max-width: 1440px) {
+    .partner-header {
+        padding-left: 50px;
+    }
+
+    .trip-sec {
+        min-height: 574px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .trip-sec {
+        min-height: 445px;
+    }   
+}
+
+@media screen and (max-width: 1280px) {
+    .trip-sec {
+        min-height: 460px;
+    } 
+}
+
+@media screen and (max-width: 1024px) {
+    .trip-sec {
+        min-height: 1018px;
+    } 
+
+    .partner-header img {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .trip-sec {
+        min-height: 510px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .trip-sec {
+        min-height: 405px;
+    }
+    .partner-header {
+        padding-left: 0;
+    }
+    .partner-header img {
+        width: 40%;
+    }
+    .partner-header {
+        padding: 15px 0px 5px 0px;
+        text-align: center;
+    }
+}
+
+
+
+

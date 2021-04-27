@@ -1,0 +1,238 @@
+
+.custom-padding {
+    background-color: #00FECA;
+}
+
+.partner-header {
+    padding: 16px 0px 16px 260px;
+}
+
+.partner-header img {
+    width: 12%;
+}
+
+.about-us-section{
+    margin-top: 50px;
+}
+
+
+.about-us-section .about-heading h2 {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    bottom: 150px;
+    font-size: 32px;
+    font-weight: 600;
+    font-family: "f-semibold";
+    letter-spacing: 1px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: black;
+}
+
+.heading:after {
+    border-bottom: 3px solid black;
+}
+
+.about-us-section .about-heading span {
+    position: absolute;
+    content: " ";
+    left: 0;
+    bottom: 0px;
+    height: 125px;
+    width: 3px;
+    right: 0;
+    margin: 0 auto;
+    color: black;
+}
+
+.about-us-section .about-content h2 {
+    color: black;
+}
+
+.about-us-section .about-content span {
+    color: black;
+}
+
+.about-us-section .about-content p {
+    font-size: 14px;
+    line-height: 40px;
+    margin-bottom: 24px;
+    font-family: "f-semibold";
+    color: black;
+}
+
+.about-us-section .about-content a.btn-learn {
+    background: #FDF200;
+    border: 2px solid #FDF200;
+    border-radius: 35px;
+    font-size: 14px;
+    padding: 12px 25px;
+    font-family: "f-regular";
+    font-weight: 600;
+    color: #000;
+}
+
+.about-us-section .about-content a.btn-learn span i.fa {
+    color: #000;
+    margin-left: 8px;
+    font-size: 14px;
+    vertical-align: text-bottom;
+}
+
+.what-we-heading {
+    position: relative;
+    height: 580px;
+}
+
+.what-we-section .what-we-content {
+    padding-left: 0px;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.what-we-section .what-we-content h2 {
+    color: black;
+}
+
+.what-we-section .what-we-content span {
+    color: black;
+}
+
+.what-we-section p {
+    color: black;
+}
+
+
+
+.what-we-section .what-we-content h2 {
+    display: inline-block;
+}
+
+.what-we-section .what-we-content h2.heading:after {
+    content: " ";
+    position: absolute;
+    bottom: -10px;
+    right: 3px;
+    left: unset;
+    border-bottom: 3px solid black;
+    width: 42%;
+}
+
+.what-we-section .what-we-img {
+    text-align: right;
+}
+
+.what-we-section .what-we-heading h2 {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    bottom: 150px;
+    font-size: 32px;
+    font-weight: 600;
+    font-family: "f-semibold";
+    letter-spacing: 1px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.what-we-section .what-we-heading span {
+    position: absolute;
+    content: " ";
+    left: 0;
+    bottom: 0px;
+    height: 125px;
+    width: 3px;
+    right: 0;
+    margin: 0 auto;
+}
+
+.what-we-section .what-we-content p {
+    font-size: 14px;
+    line-height: 40px;
+    margin-bottom: 24px;
+    font-family: "f-semibold";
+}
+
+
+
+/* ********************* Media Query ********************** */
+
+@media screen and (max-width: 1440px) {
+    .partner-header {
+        padding-left: 50px;
+    }
+}
+
+@media screen and (max-width: 1366px) {}
+
+@media screen and (max-width: 1280px) {}
+
+@media screen and (max-width: 1024px) {
+    .contact-sec {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        display: flex;
+        height: 90.2vh;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+
+    .contact-sec.bg-green.custom-padding {
+        margin-top: 0;
+    }
+    .contact-content form textarea {
+        margin-bottom: 50px;
+    }
+    .about-us-section .about-content,
+    .what-we-section .what-we-content {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .about-heading,
+    .what-we-heading {
+        height: 540px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .contact-content form input {
+        font-size: 10px;
+    }
+    .contact-sec {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .partner-header {
+        padding-left: 0;
+    }
+    .partner-header img {
+        width: 56%;
+    }
+    .partner-header {
+        padding: 15px 0px 5px 0px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 375px) {}
+
+@media screen and (max-width: 360px) {}
+
+@media screen and (max-width: 320px) {}
